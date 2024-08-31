@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+
+git config --global user.name "Khori-Lee"
+git config --global user.email "otherstufflee@gmail.com"
+
+git init
+
+echo "################################################################"
+echo "###################    SETUP   DONE       ######################"
+echo "################################################################"
