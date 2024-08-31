@@ -1,0 +1,8 @@
+
+prog "Personal Menu Editor " /usr/share/pixmaps/icewm_peditor.png /usr/local/bin/icewm-quick-personal-menu-manager
+prog "Lucas Chess " /home/tk/LucasChessR/Resources/IntFiles/logo64r.png /home/tk/Documents/app
+prog "Stremio " /usr/share/icons/hicolor/24x24/apps/smartcode-stremio.png stremio 
+prog "Foliate " /usr/share/icons/hicolor/scalable/apps/com.github.johnfactotum.Foliate.svg com.github.johnfactotum.Foliate 
+prog "Brave Web Browser " /usr/share/icons/hicolor/24x24/apps/brave-browser.png /usr/bin/brave-browser-stable 
+prog "SMPlayer " /usr/share/icons/papirus-antix/24x24/apps/smplayer.png smplayer 
+prog "Telegram Desktop " /usr/share/icons/papirus-antix/24x24/apps/telegram.png /usr/bin/telegram-desktop

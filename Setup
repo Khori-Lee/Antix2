@@ -7,8 +7,13 @@
 ##################################################################################################################
 
 cd ~/Downloads
+
+git clone git@github.com:Khori-Lee/Antix2.git
+
 wget -c http://repo.antixlinux.com/antix-archive-keyring_20019.5.0_all.deb
 sudo dpkg -i antix-archive-keyring_20019.5.0_all.deb
+
+rm antix-archive-keyring_20019.5.0_all.deb
 
 echo "###################    keyrings installed      ######################"
 
@@ -17,3 +22,54 @@ sudo apt update
 echo "###################    update Done      ######################"
 
 sudo apt-get remove --purge libreoffice-core
+
+wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/wps-office_11.1.0.11723.XA_amd64.deb
+
+rm wps-office_11.1.0.11723.XA_amd64.deb
+
+git clone https://github.com/iykrichie/wps-office-19-missing-fonts-on-Linux.git
+
+cd ./wps-office-19-missing-fonts-on-Linux
+
+sudo cp -f *.* /usr/share/fonts/ && sudo fc-cache -f -v
+
+echo "###################    Libre Removed and Wps installed      ######################"
+
+
+##################################################################################################################
+#
+#   INSTALL PROGRAMS
+#
+##################################################################################################################
+
+sudo apt install gnome-mines aisleriot telegram-desktop foliate curl -y 
+
+sudo add-apt-repository ppa:rvm/smplayer 
+
+sudo apt-get update 
+
+sudo apt-get install smplayer smplayer-themes smplayer-skins -y
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+
+sudo apt install brave-browser -y
+
+cd ./Antix2
+
+sudo dpkg -i xdman_gtk_8.0.29_amd64.deb
+
+rm xdman_gtk_8.0.29_amd64.deb
+
+cd ~/Downloads
+
+wget https://sourceforge.net/projects/lucaschessr/files/Version_R2/LucasChessR2_15c_LINUX.sh
+
+chmod +x LucasChessR2_15c_LINUX.sh
+
+./LucasChessR2_15c_LINUX.sh
+
+rm LucasChessR2_15c_LINUX.sh
+
+##################################################################################################################
