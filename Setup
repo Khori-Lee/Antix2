@@ -1,0 +1,19 @@
+#!/bin/bash
+
+##################################################################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
+##################################################################################################################
+
+cd ~/Downloads
+wget -c http://repo.antixlinux.com/antix-archive-keyring_20019.5.0_all.deb
+sudo dpkg -i antix-archive-keyring_20019.5.0_all.deb
+
+echo "###################    keyrings installed      ######################"
+
+sudo apt update
+
+echo "###################    update Done      ######################"
+
+sudo apt-get remove --purge libreoffice-core
