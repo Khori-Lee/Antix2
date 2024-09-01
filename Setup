@@ -99,7 +99,8 @@ sudo dpkg -i stremio_4.4.168-1_amd64.deb
 
 #### Installing zentile tiling manager
 
-
+cd ~/Downloads/Antix2
+sudo cp -R -v zentile_linux_amd64 /usr/bin/
 
 echo "###################    Apps Installed     ######################"
 
