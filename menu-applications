@@ -103,7 +103,7 @@ prog "GUVCView" "/usr/share/icons/papirus-antix/48x48/categories/guvcview.png" g
 prog "mpv Media Player" "/usr/share/icons/papirus-antix/48x48/categories/mpv.png" mpv --player-operation-mode=pseudo-gui -- 
 prog "PulseAudio Volume Control" "/usr/share/icons/papirus-antix/48x48/categories/multimedia-volume-control.png" pavucontrol
 prog "SimpleScreenRecorder" "/usr/share/icons/papirus-antix/48x48/categories/simplescreenrecorder.png" simplescreenrecorder --logfile
-prog "SMPlayer" "/usr/share/icons/papirus-antix/48x48/categories/smplayer.png" smplayer 
+prog "SMPlayer" "/usr/share/icons/papirus-antix/48x48/categories/smplayer.png" /usr/share/applications/SMPlayer-24.5.0-x86_64.AppImage 
 prog "SMTube" "/usr/share/icons/papirus-antix/48x48/categories/smtube.png" smtube
 prog "Sound Card Chooser" "/usr/share/icons/papirus-antix/48x48/categories/soundcard.png" alsa-set-default-card
 prog "Streamtuner2" "/usr/share/icons/papirus-antix/48x48/categories/streamtuner2.png" streamtuner2
