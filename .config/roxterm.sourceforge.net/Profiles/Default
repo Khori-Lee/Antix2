@@ -1,0 +1,13 @@
+
+[roxterm profile]
+font=Bitstream Vera Sans Mono 11
+scrollback_lines=5000
+always_show_tabs=0
+height=28 
+scroll_on_keystroke=1
+colour_scheme=
+cursor_shape=1
+scrollbar_pos=0
+scroll_on_output=1
+hide_menubar=1
+width=92

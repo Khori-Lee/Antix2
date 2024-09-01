@@ -114,3 +114,9 @@ cp -R -v /Antix2/menu-applications /usr/share/desktop-menu/.icewm/
 cp -R -v /Antix2/.desktop-session ~/
 
 chmod +x ~/.desktop-session/startup
+
+###  Terminal and .bashrc etc
+
+cd ~/Downloads
+cp -R -v /Antix2/.config ~/
+
