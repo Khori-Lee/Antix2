@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#create a file called .bashrc-personal and put all your personal aliases
+#in here. Then add the line below to .bashrc to pull for your aliases from the file
+
+# [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
+
+#fix obvious typo's
+alias cl='clear && neofetch --ascii_distro macos'
+
+alias exe='chmod +x'
+alias mpkg='makepkg -si'
+
+#list
+#alias l='exa --long --grid'
+#alias ls='exa --all --long --grid --group-directories-first'
+#alias l.="ls -A | egrep '^\.'"
+# alias la='exa --all --long --grid --group-directories-first'
+# alias ll='ls -alFh'
+# alias l='ls'
+# alias l.="ls -A | egrep '^\.'"
+
+#install stuff
+alias gc='git clone'
+
+
+#grub
+alias grubc='sudo mkinitcpio -P linux && sudo grub-mkconfig -o /boot/grub/grub.cfg'
+
+#harcode icon fixer
+alias hfix='sudo hardcode-fixer'
+
+#plymouth
+alias listply='cd /usr/share/plymouth/themes/ && sudo plymouth-set-default-theme -l'
+alias setply='sudo plymouth-set-default-theme -R'
+
+#neofetch backup/restore
+alias neob='cd ~/.config/neofetch/ && rename config.conf configbackup.conf config.conf'
+alias neor='cd ~/.config/neofetch/ && rename configbackup.conf config.conf configbackup.conf '
+
+alias neot='neofetch --ascii_distro'
+neofetch --ascii_distro macos

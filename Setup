@@ -42,7 +42,7 @@ echo "###################    Libre Removed and Wps installed      ##############
 #
 ##################################################################################################################
 
-sudo apt install gnome-mines aisleriot telegram-desktop foliate curl pulseaudio -y 
+sudo apt install gnome-mines aisleriot telegram-desktop foliate curl pulseaudio neofetch -y 
 
 sudo add-apt-repository ppa:rvm/smplayer 
 
@@ -120,3 +120,8 @@ chmod +x ~/.desktop-session/startup
 cd ~/Downloads
 cp -R -v /Antix2/.config ~/
 
+cp -R -v /Antix2/.fonts ~/
+
+sudo fc-cache -f -v
+
+cp -R -v /Antix2/.bashrc /Antix2/.bashrc-personal /Antix2/.bash_aliases ~/
