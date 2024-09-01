@@ -6,6 +6,8 @@
 #
 ##################################################################################################################
 
+sudo apt install git -y 
+
 cd ~/Downloads
 
 git clone git@github.com:Khori-Lee/Antix2.git
