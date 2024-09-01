@@ -49,6 +49,9 @@ sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update 
 
 sudo apt-get install smplayer smplayer-themes smplayer-skins -y
+
+#### brave browser
+
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
@@ -58,11 +61,15 @@ sudo apt install brave-browser -y
 
 cd ./Antix2
 
+#### xdm
+
 sudo dpkg -i xdman_gtk_8.0.29_amd64.deb
 
 rm xdman_gtk_8.0.29_amd64.deb
 
 cd ~/Downloads
+
+#### lucas chess
 
 wget https://sourceforge.net/projects/lucaschessr/files/Version_R2/LucasChessR2_15c_LINUX.sh
 
@@ -71,5 +78,10 @@ chmod +x LucasChessR2_15c_LINUX.sh
 ./LucasChessR2_15c_LINUX.sh
 
 rm LucasChessR2_15c_LINUX.sh
+
+cd ./Antix2/Lucas
+
+cp -R -v  * ~/LucasChessR
+
 
 ##################################################################################################################
